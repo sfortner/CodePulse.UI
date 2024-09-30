@@ -6,7 +6,7 @@
     </div>
 
     <!-- <ng-container *ngIf="categories"> -->
-    <!-- @if and @for are part of the new template control flow features -->
+    <!-- https://angular.dev/guide/templates/control-flow - @if and @for are part of the new template control flow features -->
     @if(categories$ | async) {
         <ng-container>
             <table class="table table-bordered mt-3">
@@ -15,6 +15,7 @@
                         <th>Id</th>
                         <th>Name</th>
                         <th>Url Handle</th>
+                        <th> </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -24,6 +25,9 @@
                             <td>{{category.id}}</td>
                             <td>{{category.name}}</td>
                             <td>{{category.urlHandle}}</td>
+                            <td>
+                                <a class="btn btn-light" [routerLink]="['/admin/categories', category.id]">Edit</a>
+                            </td>
                         </tr>
                     }
                 </tbody>
