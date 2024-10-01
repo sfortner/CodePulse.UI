@@ -8,7 +8,7 @@ import { AsyncPipe } from '@angular/common';
 @Component({
   selector: 'app-blogpost-list',
   standalone: true,
-  imports: [RouterModule, AsyncPipe],
+  imports: [RouterModule, AsyncPipe, ],
   templateUrl: './blogpost-list.component.html',
   styleUrl: './blogpost-list.component.css'
 })
