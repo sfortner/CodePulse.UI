@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { BlogPost } from '../blog-post/models/blog-post-model';
+import { BlogPost } from '../blog-post/models/blog-post.model';
 import { Observable } from 'rxjs';
 import { BlogPostService } from '../blog-post/services/blog-post.service';
 import { AsyncPipe } from '@angular/common';
+
 
 @Component({
   selector: 'app-blogpost-list',
