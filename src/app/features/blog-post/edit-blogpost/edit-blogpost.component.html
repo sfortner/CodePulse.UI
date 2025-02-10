@@ -3,7 +3,6 @@
 
     @if (model) {
     <ng-container>
-
         <form (ngSubmit)="onFormSubmit()">
             <div class="mt-2 mb-5">
                 <div class="mt-3">
@@ -42,6 +41,9 @@
 
                 <div class="mt-3">
                     <label for="featuredImageUrl" class="form-label">Featured Image Url</label>
+                    <label for="featuredImageUrl" class="form-label">Featured Image Url
+                      <button type="button" class="btn btn-light" (click)="openImageSelector()">Select Image</button>
+                    </label>
 
                     @if (model.featuredImageUrl !== '') {
                     <ng-container>
@@ -105,4 +107,10 @@
         </form>
     </ng-container>
     }
+</div>
+
+<!--the d-block class is bootstrap class to make the element (div) appear like a block, other hides any element-->
+<div class="images-container-modal" [ngClass]="{'d-block': isImageSelectorVisible, 'd-none': !isImageSelectorVisible}">
+    <button type="button" class="btn btn-light" style="position: fixed; top: 10px;right: 10px" (click)="closeImageSelector()">X</button>
+    <app-image-selector></app-image-selector>
 </div>
