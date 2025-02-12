@@ -3,7 +3,7 @@ import { ImageService } from './image.service';
 import { Observable } from 'rxjs';
 import { FormsModule } from '@angular/forms';
 import { BlogImage } from '../../models/blog-image';
-import { AsyncPipe, DatePipe } from '@angular/common';
+import { AsyncPipe } from '@angular/common';
 
 @Component({
   selector: 'app-image-selector',

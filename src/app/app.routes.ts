@@ -6,6 +6,8 @@ import { BlogpostListComponent } from './features/blogpost-list/blogpost-list.co
 import { AddBlogpostComponent } from './features/blog-post/add-blogpost/add-blogpost.component';
 import { EditBlogpostComponent } from './features/blog-post/edit-blogpost/edit-blogpost.component';
 import { ImageSelectorComponent } from './shared/components/image-selector/image-selector.component';
+import { BlogDetailsComponent } from './features/public/blog-details/blog-details/blog-details.component';
+import { HomeComponent } from './features/public/home/home/home.component';
 
 export const routes: Routes = [
     {
@@ -35,5 +37,13 @@ export const routes: Routes = [
     {
         path: 'admin/image',
         component: ImageSelectorComponent
+    },
+    {
+        path: '',
+        component: HomeComponent
+    },
+    {
+        path: 'blog/:url',
+        component: BlogDetailsComponent
     }
 ];
