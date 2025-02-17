@@ -7,11 +7,11 @@ import { AsyncPipe, DatePipe } from '@angular/common';
 import { MarkdownComponent } from 'ngx-markdown';
 
 @Component({
-  selector: 'app-blog-details',
-  standalone: true,
-  imports: [AsyncPipe, DatePipe, MarkdownComponent],
-  templateUrl: './blog-details.component.html',
-  styleUrl: './blog-details.component.css'
+    selector: 'app-blog-details',
+    standalone: true,
+    imports: [AsyncPipe, DatePipe, MarkdownComponent],
+    templateUrl: './blog-details.component.html',
+    styleUrl: './blog-details.component.css'
 })
 
 export class BlogDetailsComponent {

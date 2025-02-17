@@ -6,11 +6,11 @@ import { Observable } from 'rxjs';
 import { AsyncPipe } from '@angular/common';
 
 @Component({
-  selector: 'app-category-list',
-  standalone: true,
-  imports: [RouterModule, AsyncPipe],
-  templateUrl: './category-list.component.html',
-  styleUrl: './category-list.component.css'
+    selector: 'app-category-list',
+    standalone: true,
+    imports: [RouterModule, AsyncPipe],
+    templateUrl: './category-list.component.html',
+    styleUrl: './category-list.component.css'
 })
 export class CategoryListComponent implements OnInit {
 

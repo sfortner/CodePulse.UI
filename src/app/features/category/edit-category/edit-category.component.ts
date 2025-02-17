@@ -8,11 +8,11 @@ import { AsyncPipe } from '@angular/common';
 import { UpdateCategoryRequest } from '../models/update-category-request.model';
 
 @Component({
-  selector: 'app-edit-category',
-  standalone: true,
-  imports: [FormsModule, AsyncPipe],
-  templateUrl: './edit-category.component.html',
-  styleUrl: './edit-category.component.css'
+    selector: 'app-edit-category',
+    standalone: true,
+    imports: [FormsModule],
+    templateUrl: './edit-category.component.html',
+    styleUrl: './edit-category.component.css'
 })
 export class EditCategoryComponent implements OnInit, OnDestroy {
   
@@ -34,7 +34,7 @@ export class EditCategoryComponent implements OnInit, OnDestroy {
         this.id = params.get('id');
 
         if (this.id) {
-          // get the data fro the API for this category Id
+          // get the data from the API for this category Id
           //this.category$ = this.categoryService.getCategoryById(this.id);
           this.categoryService.getCategoryById(this.id)
           .subscribe({

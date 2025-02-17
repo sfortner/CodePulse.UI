@@ -6,11 +6,11 @@ import { BlogImage } from '../../models/blog-image';
 import { AsyncPipe } from '@angular/common';
 
 @Component({
-  selector: 'app-image-selector',
-  standalone: true,                   // to convert to standalone component, add standalone and imports here; also remove @ViewChild... imageUploadForm
-  imports: [FormsModule, AsyncPipe],
-  templateUrl: './image-selector.component.html',
-  styleUrl: './image-selector.component.css'
+    selector: 'app-image-selector', // to convert to standalone component, add standalone and imports here; also remove @ViewChild... imageUploadForm
+    standalone: true,
+    imports: [FormsModule, AsyncPipe],
+    templateUrl: './image-selector.component.html',
+    styleUrl: './image-selector.component.css'
 })
 
 export class ImageSelectorComponent implements OnInit {

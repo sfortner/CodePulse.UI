@@ -6,11 +6,11 @@ import { Subscription } from 'rxjs';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-add-category',
-  standalone: true,
-  imports: [FormsModule],
-  templateUrl: './add-category.component.html',
-  styleUrl: './add-category.component.css'
+    selector: 'app-add-category',
+    standalone: true,
+    imports: [FormsModule],
+    templateUrl: './add-category.component.html',
+    styleUrl: './add-category.component.css'
 })
 export class AddCategoryComponent implements OnDestroy {
   model: AddCategoryRequest;

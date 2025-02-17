@@ -7,11 +7,10 @@ import { AsyncPipe } from '@angular/common';
 
 
 @Component({
-  selector: 'app-blogpost-list',
-  standalone: true,
-  imports: [RouterModule, AsyncPipe, ],
-  templateUrl: './blogpost-list.component.html',
-  styleUrl: './blogpost-list.component.css'
+    selector: 'app-blogpost-list',
+    imports: [RouterModule, AsyncPipe,],
+    templateUrl: './blogpost-list.component.html',
+    styleUrl: './blogpost-list.component.css'
 })
 export class BlogpostListComponent implements OnInit {
 

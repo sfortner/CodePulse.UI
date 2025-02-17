@@ -13,11 +13,10 @@ import { ImageService } from '../../../shared/components/image-selector/image.se
 import { ImageSelectorComponent } from '../../../shared/components/image-selector/image-selector.component';
 
 @Component({
-  selector: 'app-edit-blogpost',
-  standalone: true,
-  imports: [FormsModule, CommonModule, DatePipe, MarkdownComponent, AsyncPipe, ImageSelectorComponent],
-  templateUrl: './edit-blogpost.component.html',
-  styleUrl: './edit-blogpost.component.css'
+    selector: 'app-edit-blogpost',
+    imports: [FormsModule, CommonModule, DatePipe, MarkdownComponent, AsyncPipe, ImageSelectorComponent],
+    templateUrl: './edit-blogpost.component.html',
+    styleUrl: './edit-blogpost.component.css'
 })
 export class EditBlogpostComponent implements OnInit, OnDestroy {
   id: string | null = null;

@@ -12,11 +12,10 @@ import { ImageService } from '../../../shared/components/image-selector/image.se
 import { ImageSelectorComponent } from '../../../shared/components/image-selector/image-selector.component';
 
 @Component({
-  selector: 'app-add-blogpost',
-  standalone: true,
-  imports: [FormsModule, CommonModule, DatePipe, MarkdownComponent, AsyncPipe, ImageSelectorComponent],
-  templateUrl: './add-blogpost.component.html',
-  styleUrl: './add-blogpost.component.css'
+    selector: 'app-add-blogpost',
+    imports: [FormsModule, CommonModule, DatePipe, MarkdownComponent, AsyncPipe, ImageSelectorComponent],
+    templateUrl: './add-blogpost.component.html',
+    styleUrl: './add-blogpost.component.css'
 })
 
 export class AddBlogpostComponent implements OnInit, OnDestroy {
